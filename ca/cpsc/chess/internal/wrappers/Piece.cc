@@ -4,6 +4,10 @@
 
 #include "Piece.h"
 
+Piece::Piece(bool isBlack) {
+    Piece::isBlack = isBlack;
+}
+
 const bool Piece::isAlive() {
     return alive;
 }

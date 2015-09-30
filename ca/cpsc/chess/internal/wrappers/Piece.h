@@ -10,12 +10,14 @@ class Piece {
 
 private:
     bool alive = true;
+protected:
+    bool isBlack;
+
 public:
+    Piece(bool isBlack);
     const bool isAlive();
     const void kill();
-
     virtual char getSymbol() = 0;
-
     ~Piece();
 };
 
