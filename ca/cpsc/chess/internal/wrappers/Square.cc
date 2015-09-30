@@ -26,3 +26,11 @@ void Square::setPiece(Piece *piece) {
     Square::piece = piece;
     symbol = piece->getSymbol();
 }
+
+int Square::getX() {
+    return x;
+}
+
+int Square::getY() {
+    return y;
+}

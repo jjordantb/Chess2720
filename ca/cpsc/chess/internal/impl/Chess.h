@@ -10,13 +10,9 @@
 #include "../generic/Board.h"
 
 class Chess : public Game {
-
-private:
-    Board* board;
-
+    
 public:
     Chess();
-    Board* getBoard();
     void setup();
     bool isOver();
     Square* getSquare(std::istream &istream);

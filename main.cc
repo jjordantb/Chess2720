@@ -5,7 +5,6 @@ using namespace std;
 
 int main() {
     Chess* chessGame = new Chess();
-    chessGame->setup();
-    chessGame->getBoard()->draw(&std::cout);
+    chessGame->play();
     return 0;
 }

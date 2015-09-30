@@ -7,8 +7,12 @@
 
 #include <iosfwd>
 #include "../wrappers/Square.h"
+#include "Board.h"
 
 class Game {
+
+protected:
+    Board* board;
 
 public:
     void play();

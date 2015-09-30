@@ -13,7 +13,7 @@ class Square {
 private:
     int x, y;
     char symbol = '.';
-    Piece* piece = nullptr;
+    Piece* piece;
 
 public:
     Square(int row, int column);
@@ -21,6 +21,10 @@ public:
     const char getSymbol();
     void setPiece(Piece* piece);
     Piece* getPiece();
+
+    int getX();
+    int getY();
+
     Piece* removePiece();
 
 };
