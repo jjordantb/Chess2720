@@ -11,6 +11,7 @@ void Game::play() {
     while(!isOver()) {
         std::cout << "Enter Co-ordinates of Piece to move 'X,Y': ";
         Square* location = getSquare(std::cin);
+        std::cout << location->getSymbol() << std::endl;
         std::cout << "Enter Co-ordinates of place to move to 'X,Y': ";
         Square* destination = getSquare(std::cin);
         movePiece(location, destination);

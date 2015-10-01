@@ -3,25 +3,24 @@
 //
 
 #include "Square.h"
+#include "../impl/pieces/NullPiece.h"
 
 Square::Square(int row, int column) {
     x = row;
     y = column;
-    piece = new Pawn(false);
+    piece = new NullPiece();
 }
 
-const char Square::getSymbol() {
-    return symbol;
+char Square::getSymbol() {
+    return piece->getSymbol();
 }
 
 Piece* Square::removePiece() {
     Piece* piece1 = piece;
-    piece = nullptr;
-    symbol = '.';
+    piece = new NullPiece();
     return piece1;
 }
 
 void Square::setPiece(Piece *piece) {
     Square::piece = piece;
-    symbol = piece->getSymbol();
 }
