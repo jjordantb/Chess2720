@@ -41,7 +41,7 @@ const void Board::placePiece(Piece *piece, Square *square) {
 }
 
 Square* Board::getSquare(const int row, const int column) {
-    return squares[row][column];
+    return squares[column][row];
 }
 
 const void Board::movePiece(Square *square1, Square *square2) {
