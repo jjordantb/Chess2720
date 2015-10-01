@@ -15,9 +15,13 @@ void Chess::setup() {
     for (int i = 1; i <= 4; i+=3) {
         for (int j = 0; j < 6; ++j) {
             if (i == 1) {
-                board->getSquare(i, j)->setPiece(new Pawn(false));
+                Pawn* pawn = new Pawn(false);
+                board->getSquare(i, j)->setPiece(pawn);
+                delete pawn;
             } else if (i == 4) {
-                board->getSquare(i, j)->setPiece(new Pawn(true));
+                Pawn* pawn = new Pawn(true);
+                board->getSquare(i, j)->setPiece(pawn);
+                delete pawn;
             }
         }
     }

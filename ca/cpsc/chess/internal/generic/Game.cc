@@ -19,7 +19,7 @@ void Game::play() {
 }
 
 bool Game::movePiece(Square *square1, Square *square2) {
-    square2->setPiece(square1->getPiece());
+    board->placePiece(square1->removePiece(), square2);
     return true;
 }
 

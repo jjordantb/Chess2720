@@ -20,11 +20,6 @@ public:
 
     const char getSymbol();
     void setPiece(Piece* piece);
-    Piece* getPiece();
-
-    int getX();
-    int getY();
-
     Piece* removePiece();
 
 };

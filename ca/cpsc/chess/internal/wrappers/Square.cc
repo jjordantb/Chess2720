@@ -2,6 +2,7 @@
 // Created by jorda on 9/29/2015.
 //
 
+#include <iostream>
 #include "Square.h"
 
 Square::Square(int row, int column) {
@@ -9,28 +10,19 @@ Square::Square(int row, int column) {
     y = column;
 }
 
-Piece* Square::getPiece() {
-    return piece;
-}
-
 const char Square::getSymbol() {
     return symbol;
 }
 
 Piece* Square::removePiece() {
+    Piece* piece1 = piece;
+    std::cout << piece1->getSymbol() << std::endl;
+    piece = nullptr;
     symbol = '.';
-    return piece = nullptr;
+    return piece1;
 }
 
 void Square::setPiece(Piece *piece) {
     Square::piece = piece;
     symbol = piece->getSymbol();
-}
-
-int Square::getX() {
-    return x;
-}
-
-int Square::getY() {
-    return y;
 }
