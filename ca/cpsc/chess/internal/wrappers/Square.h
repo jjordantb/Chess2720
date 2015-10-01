@@ -7,12 +7,15 @@
 
 
 #include "Piece.h"
+#include "../impl/pieces/Pawn.h"
 
 class Square {
 
 private:
     int x, y;
     char symbol = '.';
+
+protected:
     Piece* piece;
 
 public:

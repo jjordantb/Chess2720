@@ -2,12 +2,12 @@
 // Created by jorda on 9/29/2015.
 //
 
-#include <iostream>
 #include "Square.h"
 
 Square::Square(int row, int column) {
     x = row;
     y = column;
+    piece = new Pawn(false);
 }
 
 const char Square::getSymbol() {
@@ -16,7 +16,6 @@ const char Square::getSymbol() {
 
 Piece* Square::removePiece() {
     Piece* piece1 = piece;
-    std::cout << piece1->getSymbol() << std::endl;
     piece = nullptr;
     symbol = '.';
     return piece1;

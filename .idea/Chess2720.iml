@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Game.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/Chess.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/Chess.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/pieces/Bishop.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/pieces/Bishop.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/pieces/Pawn.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/pieces/Pawn.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/wrappers/Piece.cc" isTestSource="false" />

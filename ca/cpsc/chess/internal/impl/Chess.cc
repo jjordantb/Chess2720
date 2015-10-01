@@ -5,7 +5,6 @@
 #include <string>
 #include <iostream>
 #include "Chess.h"
-#include "pieces/Pawn.h"
 
 Chess::Chess() {
     board = new Board(6, 6);
@@ -15,13 +14,9 @@ void Chess::setup() {
     for (int i = 1; i <= 4; i+=3) {
         for (int j = 0; j < 6; ++j) {
             if (i == 1) {
-                Pawn* pawn = new Pawn(false);
-                board->getSquare(i, j)->setPiece(pawn);
-                delete pawn;
+                board->getSquare(i, j)->setPiece(new Pawn(false));
             } else if (i == 4) {
-                Pawn* pawn = new Pawn(true);
-                board->getSquare(i, j)->setPiece(pawn);
-                delete pawn;
+                board->getSquare(i, j)->setPiece(new Pawn(true));
             }
         }
     }
