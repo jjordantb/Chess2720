@@ -1,10 +1,13 @@
-//
-// Created by jorda on 9/29/2015.
-//
+/*
+ *  Jordan Florchinger
+ *  CPSC-2720
+ *
+ *  Wrapper for the Square object
+ *  Issues with Segmentation faults and accessing the Piece object.
+ */
 
 #include "Square.h"
 #include "../impl/pieces/NullPiece.h"
-#include <assert.h>
 
 Square::Square(int row, int column) {
     x = row;

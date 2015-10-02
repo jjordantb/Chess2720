@@ -9,5 +9,5 @@ Queen::Queen(bool isBlack) : Piece::Piece(isBlack) {
 }
 
 char Queen::getSymbol() {
-    return isBlack ? 'K' : 'k';
+    return isBlack ? 'Q' : 'q';
 }
