@@ -1,10 +1,3 @@
-/*
- *  Jordan Florchinger
- *  CPSC-2720
- *
- *  Wrapper for the Square object
- *  Issues with Segmentation faults and accessing the Piece object.
- */
 
 #include "Square.h"
 #include "../impl/pieces/NullPiece.h"

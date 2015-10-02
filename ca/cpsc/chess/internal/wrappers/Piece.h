@@ -1,7 +1,9 @@
-//
-// Created by jorda on 9/29/2015.
-//
-
+/*
+ *  Jordan Florchinger
+ *  CPSC-2720
+ *
+ *  Piece abstraction, implemented by the chess pieces
+ */
 #ifndef CHESS2720_PIECE_H
 #define CHESS2720_PIECE_H
 

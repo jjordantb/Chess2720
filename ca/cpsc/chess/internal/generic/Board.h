@@ -1,7 +1,9 @@
-//
-// Created by jorda on 9/29/2015.
-//
-
+/*
+ *  Jordan Florchinger
+ *  CPSC-2720
+ *
+ *  Wrapper for the 2D array of squares
+ */
 #ifndef CHESS2720_BOARD_H
 #define CHESS2720_BOARD_H
 

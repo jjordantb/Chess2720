@@ -1,7 +1,9 @@
-//
-// Created by jorda on 9/29/2015.
-//
-
+/*
+ *  Jordan Florchinger
+ *  CPSC-2720
+ *
+ *  Abstraction of main game
+ */
 #ifndef CHESS2720_GAME_H
 #define CHESS2720_GAME_H
 

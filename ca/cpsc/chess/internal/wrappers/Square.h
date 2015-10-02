@@ -1,7 +1,10 @@
-//
-// Created by jorda on 9/29/2015.
-//
-
+/*
+*  Jordan Florchinger
+*  CPSC-2720
+*
+*  Wrapper for the Square object
+*  Issues with Segmentation faults and accessing the Piece object.
+*/
 #ifndef CHESS2720_SQUARE_H
 #define CHESS2720_SQUARE_H
 

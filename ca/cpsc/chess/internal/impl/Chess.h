@@ -1,7 +1,10 @@
-//
-// Created by jorda on 9/30/2015.
-//
-
+/*
+ *  Jordan Florchinger
+ *  CPSC-2720
+ *
+ *  Implements the Game abstraction
+ *  Removed getSquare as I was having istream issues
+ */
 #ifndef CHESS2720_CHESS_H
 #define CHESS2720_CHESS_H
 
@@ -15,7 +18,6 @@ public:
     Chess();
     void setup();
     bool isOver();
-    Square* getSquare(std::istream &istream);
 
     ~Chess();
 };
