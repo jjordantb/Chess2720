@@ -26,3 +26,7 @@ Piece* Square::getPiece() {
 void Square::setPiece(Piece *piece) {
     Square::piece = piece;
 }
+
+Square::~Square() {
+    delete piece;
+}
