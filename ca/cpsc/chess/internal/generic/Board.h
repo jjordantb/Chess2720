@@ -13,7 +13,7 @@
 class Board {
 
 private:
-    int width, height;
+    int *width, *height;
     Square* squares[6][6];
 
 public:

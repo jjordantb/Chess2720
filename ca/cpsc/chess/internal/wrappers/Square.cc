@@ -4,6 +4,7 @@
 
 #include "Square.h"
 #include "../impl/pieces/NullPiece.h"
+#include <assert.h>
 
 Square::Square(int row, int column) {
     x = row;
@@ -15,10 +16,15 @@ char Square::getSymbol() {
     return piece->getSymbol();
 }
 
-Piece* Square::removePiece() {
-    Piece* piece1 = piece;
+bool Square::removePiece() {
+    delete piece;
     piece = new NullPiece();
-    return piece1;
+    return piece != nullptr;
+}
+
+//TODO: Segmentation Faults
+Piece* Square::getPiece() {
+    return piece;
 }
 
 void Square::setPiece(Piece *piece) {

@@ -22,7 +22,9 @@ public:
 
     char getSymbol();
     void setPiece(Piece* piece);
-    Piece* removePiece();
+    bool removePiece();
+
+    Piece* getPiece();
 
 };
 

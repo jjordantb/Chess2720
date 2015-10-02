@@ -27,12 +27,6 @@ void Chess::setup() {
     }
 }
 
-Square* Chess::getSquare(std::istream &istream) {
-    std::string line;
-    istream >> line;
-    return board->getSquare(line[2], line[0]);
-}
-
 bool Chess::isOver() {
     return false;
 }
