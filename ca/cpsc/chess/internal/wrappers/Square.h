@@ -1,36 +1,44 @@
 /*
-*  Jordan Florchinger
-*  CPSC-2720
-*
-*  Wrapper for the Square object
-*  Issues with Segmentation faults and accessing the Piece object.
-*/
-#ifndef CHESS2720_SQUARE_H
-#define CHESS2720_SQUARE_H
+ * Square.h
+ *
+ *  Created on: Sep 2, 2015
+ *      Author: anvik
+ */
 
+#ifndef SQUARE_H_
+#define SQUARE_H_
 
 #include "Piece.h"
-#include "../impl/pieces/Pawn.h"
 
+#define EMPTY '.'
+
+/**
+ * A square on the board of the game
+ */
 class Square {
+public:
+    Square();
+    virtual ~Square() {};
+    /**
+     * @return the symbol for drawing this square
+     */
+    const char symbol() const;
+    /**
+     * Sets the piece contained by the square
+     * @param p the piece to be placed on the square
+     */
+    void setPiece(Piece* p);
+    /**
+     * @return the piece located on this square and removes it from the board. Returns NULL if the square has no piece
+     */
+    Piece* removePiece();
+    /**
+     * @return the piece located on this square, otherwise returns NULL
+     */
+    Piece* getPiece() const;
 
 private:
-    int x, y;
-
-protected:
-    Piece* piece;
-
-public:
-    Square(int row, int column);
-
-    char getSymbol();
-    void setPiece(Piece* piece);
-    bool removePiece();
-
-    Piece* getPiece();
-
-    ~Square();
+    Piece* piece; /*< Piece contained by the square */
 };
 
-
-#endif //CHESS2720_SQUARE_H
+#endif /* SQUARE_H_ */

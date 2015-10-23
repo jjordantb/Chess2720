@@ -1,48 +1,51 @@
-//
-// Created by jorda on 9/30/2015.
-//
+/*
+ * Chess.h
+ *
+ *  Created on: Sep 4, 2015
+ *      Author: anvik
+ */
 
-#include <string>
-#include <iostream>
-#include "Chess.h"
-#include "pieces/Bishop.h"
-#include "pieces/King.h"
-#include "pieces/Queen.h"
-#include "pieces/Rook.h"
+#ifndef CHESS_H_
+#define CHESS_H_
 
-Chess::Chess() {
-    board = new Board(6, 6);
-}
+#include "../wrappers/Square.h"
+#include "../generic/Game.h"
 
-void Chess::setup() {
-    for (int i = 1; i <= 4; i+=3) {
-        for (int j = 0; j < 6; ++j) {
-            if (i == 1) {
-                board->getSquare(j, i)->setPiece(new Pawn(false));
-            } else if (i == 4) {
-                board->getSquare(j, i)->setPiece(new Pawn(true));
-            }
-        }
-    }
-    for (int i = 1; i <= 4; i+=3) {
-        board->getSquare(i, 0)->setPiece(new Bishop(false));
-        board->getSquare(i, 5)->setPiece(new Bishop(true));
-    }
-    for (int i = 0; i <= 5; i+=5) {
-        board->getSquare(i, 0)->setPiece(new Rook(false));
-        board->getSquare(i, 5)->setPiece(new Rook(true));
-    }
 
-    board->getSquare(2, 0)->setPiece(new King(false));
-    board->getSquare(2, 5)->setPiece(new King(true));
-    board->getSquare(3, 0)->setPiece(new Queen(false));
-    board->getSquare(3, 5)->setPiece(new Queen(true));
-}
+/**
+ * A chess board game
+ */
+class Chess: public Game {
+public:
+    Chess();
+    virtual ~Chess();
+    /**
+     * Sets up the game board with pieces
+     */
+    void setup() const;
+    /**
+     *  The game ends when one of the King pieces is taken.
+     */
+    bool isOver() const;
+    /**
+     * Read the row and column for a location on the board.
+     * The row and column values are separated by a space on one line.
+     */
+    Square* getSquare(std::istream &is) const;
 
-bool Chess::isOver() {
-    return false;
-}
+private:
+    Piece* wKing; /*!< the White King */
+    Piece* bKing; /*!< the Black King */
+    std::vector<Piece*> wRooks; /*!< the White Rooks */
+    std::vector<Piece*> bRooks; /*!< the Black Rooks */
+    std::vector<Piece*> wPawns; /*!< the White Pawns */
+    std::vector<Piece*> bPawns; /*!< the Black Pawns */
+    Piece* wQueen; /*!< the White Queen */
+    Piece* bQueen; /*!< the Black Queen */
+    std::vector<Piece*> wBishops; /*!< the White Bishops */
+    std::vector<Piece*> bBishops; /*!< the Black Bishops */
 
-Chess::~Chess() {
-    delete board;
-}
+};
+
+#endif /* CHESS_H_ */
+

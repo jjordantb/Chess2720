@@ -1,32 +1,40 @@
+/*
+ * Square.cpp
+ *
+ *  Created on: Sep 2, 2015
+ *      Author: anvik
+ */
 
 #include "Square.h"
-#include "../impl/pieces/NullPiece.h"
+#include <stdlib.h>
 
-Square::Square(int row, int column) {
-    x = row;
-    y = column;
-    piece = new NullPiece();
+Square::Square(){
+    piece = NULL;
 }
 
-char Square::getSymbol() {
-    return piece->getSymbol();
+void Square::setPiece(Piece* p) {
+    /**
+     * If a piece exists on this square, kill it
+     */
+    if (piece != NULL){
+        piece->kill();
+    }
+    piece = p;
 }
 
-bool Square::removePiece() {
-    delete piece;
-    piece = new NullPiece();
-    return piece != nullptr;
+Piece* Square::removePiece() {
+    Piece* p = piece;
+    piece = NULL;
+    return p;
 }
 
-//TODO: Segmentation Faults
-Piece* Square::getPiece() {
+const char Square::symbol() const {
+    if (piece != NULL)
+        return piece->symbol;
+    else
+        return EMPTY;
+}
+
+Piece* Square::getPiece() const {
     return piece;
-}
-
-void Square::setPiece(Piece *piece) {
-    Square::piece = piece;
-}
-
-Square::~Square() {
-    delete piece;
 }

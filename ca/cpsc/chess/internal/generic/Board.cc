@@ -7,46 +7,63 @@
 #include <iostream>
 #include "Board.h"
 
-Board::Board(const int width, const int height) {
-    Board::width = new int(width);
-    Board::height = new int (height);
+/*
+ * Board.cpp
+ *
+ *  Created on: Sep 2, 2015
+ *      Author: anvik
+ */
 
-    for (int x = 0; x < width; ++x) {
-        for (int y = 0; y < height; ++y) {
-            Board::squares[x][y] = new Square(x, y);
-        }
-    }
+#include <iostream>
+#include <assert.h>
+
+Board::Board(const int w, const int h) :
+        height { h }, width { w } {
+    board = new Square*[height];
+    for (int row = 0; row < height; row++)
+        board[row] = new Square[width];
 }
 
 Board::~Board() {
-    for (int x = 0; x < 6; ++x) {
-        for (int y = 0; y < 6; y++) {
-            delete squares[x][y];
+    delete[] board;
+}
+
+void Board::draw(std::ostream& o) const {
+
+    /**
+     * Show the column coordinates
+     */
+    o << " ";
+    for (int j = 0; j < width; j++)
+        o << j;
+
+    o << std::endl;
+
+    /**
+     * Iterate through the rows drawing the symbol for each column
+     */
+    for (int i = 0; i < height; i++) {
+        o << i; // Show the row coordinate
+        for (int j = 0; j < width; j++) {
+            Square s = board[i][j];
+            o << s.symbol();
         }
-    }
-    delete width;
-    delete height;
-}
-
-const void Board::draw(std::ostream *ostream) {
-    *ostream << "|   | 0 | 1 | 2 | 3 | 4 | 5 |" << std::endl;
-    for (int x = 0; x < *width; ++x) {
-        *ostream << "| " << x << " |";
-        for (int y = 0; y < *height; ++y) {
-            *ostream << " " << squares[x][y]->getSymbol() << " |";
-        }
-        *ostream << std::endl;
+        o << std::endl;
     }
 }
 
-const void Board::placePiece(Piece *piece, Square *square) {
-    square->setPiece(piece);
+void Board::placePiece(Piece* p, Square* s) const {
+    s->setPiece(p);
 }
 
-Square* Board::getSquare(const int row, const int column) {
-    return squares[column][row];
+bool Board::movePiece(Square* s, Square* d) const {
+    Piece* p = s->removePiece();
+    assert(p != NULL);
+    d->setPiece(p);
+    return true;
 }
 
-const void Board::movePiece(Square *square1, Square *square2) {
-    placePiece(square1->getPiece(), square2);
+Square* Board::getSquare(int r, int c) const {
+    return &board[r][c];
 }
+

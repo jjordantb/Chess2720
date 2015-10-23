@@ -1,21 +1,20 @@
-//
-// Created by jorda on 9/29/2015.
-//
+/*
+ * Piece.cpp
+ *
+ *  Created on: Sep 4, 2015
+ *      Author: anvik
+ */
 
 #include "Piece.h"
 
-Piece::Piece(bool isBlack) {
-    Piece::isBlack = isBlack;
+Piece::Piece(const colour c, const char s) : symbol{s}, player {c}{
+    alive = true;
 }
 
-const bool Piece::isAlive() {
+bool Piece::isAlive() const {
     return alive;
 }
 
-const void Piece::kill() {
+void Piece::kill() {
     alive = false;
-}
-
-Piece::~Piece() {
-
 }
