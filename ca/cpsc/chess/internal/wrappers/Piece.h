@@ -9,11 +9,12 @@
 #define PIECE_H_
 
 #include <vector>
+#include "../generic/Movement.h"
 
 /**
  * A piece on the board of the game
  */
-class Piece {
+class Piece : public Movement {
 public:
     /**
      * Enumeration for colour of piece
@@ -44,6 +45,11 @@ public:
      * Colour of the piece
      */
     const colour player;
+
+    /*
+     * Returns Path of piece between two coords
+     */
+    std::vector<Coord> path(const Coord* start, const Coord* end);
 
 private:
     bool alive; /*!< Indicates if the piece is still active in the game */

@@ -18,3 +18,8 @@ bool Piece::isAlive() const {
 void Piece::kill() {
     alive = false;
 }
+
+std::vector<Coord> Piece::path(const Coord *start, const Coord *end) {
+
+    return nullptr;
+}
