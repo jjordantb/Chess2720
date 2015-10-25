@@ -1,5 +1,5 @@
 #include <iostream>
-#include "ca/cpsc/chess/internal/impl/Chess.h"
+#include "src/Chess.h"
 
 using namespace std;
 

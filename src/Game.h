@@ -10,8 +10,9 @@
 #define GAME_H_
 
 #include <iostream>
-#include "internal/generic/Board.h"
-#include "internal/impl/state/generic/State.h"
+#include "State.h"
+#include "Square.h"
+#include "Board.h"
 
 /**
  * A board game

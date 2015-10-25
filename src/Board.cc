@@ -2,7 +2,8 @@
 #include <ostream>
 #include <iostream>
 #include "Board.h"
-#include "../impl/error/Error.h"
+#include "Error.h"
+#include "Square.h"
 
 /*
  * Board.cc

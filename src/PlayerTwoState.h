@@ -6,7 +6,7 @@
 #define CHESS2720_PLAYERTWOSTATE_H
 
 
-#include "../generic/State.h"
+#include "State.h"
 
 class PlayerTwoState : public State{
 

@@ -6,7 +6,7 @@
 #define CHESS2720_ROOKSTRATEGY_H
 
 
-#include "../../generic/Movement.h"
+#include "Movement.h"
 
 /*
  * Movement algorithm for rook

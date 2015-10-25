@@ -7,8 +7,7 @@
  */
 
 #include "Square.h"
-#include "../impl/error/Error.h"
-#include <stdlib.h>
+#include "Error.h"
 
 Square::Square() {
     piece = NULL;

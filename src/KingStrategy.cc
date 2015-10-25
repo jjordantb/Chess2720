@@ -3,7 +3,6 @@
 //
 
 #include "KingStrategy.h"
-#include "../../../Game.h"
 
 std::vector<Coord*> KingStrategy::path(Coord *start, Coord *end) {
     std::vector<Coord*> coords;

@@ -6,9 +6,9 @@
 #define CHESS2720_MOVEMENT_H
 
 
-#include "../wrappers/Coord.h"
 #include <vector>
 #include <stdlib.h>
+#include "Coord.h"
 
 /*
  * Controls movement of a piece with validation

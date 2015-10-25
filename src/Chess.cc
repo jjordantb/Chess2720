@@ -8,10 +8,9 @@
 
 #include <iostream>
 #include <limits>
-#include "../generic/Board.h"
 #include "Chess.h"
-#include "error/Error.h"
-#include "state/impl/PlayerOneState.h"
+#include "PlayerOneState.h"
+#include "Error.h"
 
 #define SIZE 6
 

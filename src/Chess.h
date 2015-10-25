@@ -9,9 +9,9 @@
 #ifndef CHESS_H_
 #define CHESS_H_
 
-#include "../wrappers/Square.h"
-#include "../../Game.h"
 
+#include "Game.h"
+#include "Square.h"
 
 /**
  * A chess board game

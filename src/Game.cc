@@ -6,11 +6,12 @@
  *      Modified by: Jordan Florchinger
  */
 
-#include "internal/wrappers/Square.h"
 #include "Game.h"
-#include "internal/impl/error/Error.h"
-#include "internal/impl/state/impl/PlayerOneState.h"
-#include "internal/impl/state/impl/PlayerTwoState.h"
+#include "Square.h"
+#include "Error.h"
+#include "Coord.h"
+#include "PlayerOneState.h"
+#include "PlayerTwoState.h"
 
 /*
  * Main play method

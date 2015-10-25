@@ -10,7 +10,7 @@
 #define PIECE_H_
 
 #include <vector>
-#include "../generic/Movement.h"
+#include "Movement.h"
 
 /**
  * A piece on the board of the game

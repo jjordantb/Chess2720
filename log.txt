@@ -1,3 +1,27 @@
+commit c21d80ef008076971ca0af94f4c861d497a90914
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Sun Oct 25 15:02:28 2015 -0600
+
+    part 2 complete needs argo and doxygen
+
+commit a54b5459ec56e9329a8d10a3be641da302c3c5b4
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Sun Oct 25 14:13:32 2015 -0600
+
+    exceptions completed, TODO: player state and eating pieces
+
+commit c45189baa9eee1323c4044e55360931256d238fd
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Sun Oct 25 13:03:47 2015 -0600
+
+    strategies complete TODO: player state, exceptions
+
+commit f6d98014c40b10420aefd6f2ec69779542fa9230
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Sat Oct 24 09:48:14 2015 -0600
+
+    small changes, movement and piece and coord
+
 commit 5e6e449fb63847fac2ec50d475f8b0bc2be5c1fe
 Author: jjordantb <jordan.florchinger@uleth.ca>
 Date:   Fri Oct 23 13:28:42 2015 -0600

@@ -8,12 +8,11 @@
  */
 
 #include "Piece.h"
-#include "../impl/strats/KingStrategy.h"
-#include "../impl/strats/QueenStrategy.h"
-#include "../impl/strats/BishopStrategy.h"
-#include "../impl/strats/RookStrategy.h"
-#include "../impl/strats/PawnStrategy.h"
-#include "../impl/error/Error.h"
+#include "RookStrategy.h"
+#include "BishopStrategy.h"
+#include "QueenStrategy.h"
+#include "KingStrategy.h"
+#include "PawnStrategy.h"
 #include <cctype>
 
 Piece::Piece(const colour c, const char s) : symbol{s}, player {c}{
