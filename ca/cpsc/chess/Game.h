@@ -9,7 +9,7 @@
 #define GAME_H_
 
 #include <iostream>
-#include "Board.h"
+#include "internal/generic/Board.h"
 
 /**
  * A board game

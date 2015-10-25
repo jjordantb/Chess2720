@@ -14,7 +14,7 @@
 /**
  * A piece on the board of the game
  */
-class Piece : public Movement {
+class Piece{
 public:
     /**
      * Enumeration for colour of piece
@@ -26,7 +26,7 @@ public:
      * @param s the symbol for the piece
      */
     Piece(const colour c, const char s);
-    virtual ~Piece(){}
+    virtual ~Piece();
     /**
      * @return true if the piece is still active on the board, false otherwise.
      */
@@ -46,13 +46,11 @@ public:
      */
     const colour player;
 
-    /*
-     * Returns Path of piece between two coords
-     */
-    std::vector<Coord> path(const Coord* start, const Coord* end);
+    Movement* getMovement();
 
 private:
     bool alive; /*!< Indicates if the piece is still active in the game */
+    Movement* movement;
 
 
 };

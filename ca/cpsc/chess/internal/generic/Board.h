@@ -48,6 +48,7 @@ public:
     const int height; /*!< Height of the board */
     const int width; /*!< Width of the board */
 
+
 private:
     Square** board; /*!< The squares of the board */
 };

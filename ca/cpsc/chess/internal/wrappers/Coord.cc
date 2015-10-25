@@ -4,9 +4,8 @@
 
 #include "Coord.h"
 
-Coord::Coord(const int x, const int y) {
-    Coord::x = x;
-    Coord::y = y;
+Coord::Coord(const int x, const int y) : x{x}, y{y} {
+
 }
 
 int Coord::getX() const {

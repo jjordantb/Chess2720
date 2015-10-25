@@ -1,0 +1,105 @@
+commit 5e6e449fb63847fac2ec50d475f8b0bc2be5c1fe
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 23 13:28:42 2015 -0600
+
+    all code reformated by supplied code
+
+commit 47d613e038557b9b85b518935ab922782c617f97
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 2 11:55:48 2015 -0600
+
+    ArgoUML Added
+
+commit 5bc7ac5b343c9f99670a515ccd61051c49e637aa
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 2 11:04:20 2015 -0600
+
+    Update README.md
+
+commit 8bd1aa7d40871a01dbad16214c5718754fbf3f7f
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 2 11:03:05 2015 -0600
+
+    Final, not including ArgoUML
+
+commit db61b1c2031fbc115985d5762c7186485c59f12a
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 2 11:01:55 2015 -0600
+
+    Final, not including ArgoUML
+
+commit 0486e9af40e7f72d9662c40cf2522364a82f8323
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 2 10:47:24 2015 -0600
+
+    doxygen added implemented all pieces
+
+commit e6baa480441222a364cce68a2afaf4aa0ea93eaf
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Fri Oct 2 10:31:48 2015 -0600
+
+    Added rook, king, queen
+
+commit 7da9565fde463d9cf545fd7bf7396cddd5f5a1ff
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Thu Oct 1 11:42:19 2015 -0600
+
+    nullpiece added, small framework adjustments
+
+commit 0b3b94874c7ef720595fa4aa99e07b4b7281ac5b
+Merge: 2a2b7fb 5806a36
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 21:06:12 2015 -0600
+
+    Merge remote-tracking branch 'origin/master'
+    
+    Conflicts:
+    	.idea/Chess2720.iml
+
+commit 5806a366c2bacbdb41aac6356974ede085e82ede
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 21:05:38 2015 -0600
+
+    return
+
+commit 2a2b7fb36421d072bf06db6cacfbdbc0b1408a7f
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 21:01:15 2015 -0600
+
+    Added Bishop
+
+commit d8d83e5d213fd2e14988829700ac2644d3c333d4
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 20:30:26 2015 -0600
+
+    Added Bishop
+
+commit 82dfa4ccbcd055d6c951fed669f5805cce6d8e27
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 19:54:53 2015 -0600
+
+    Getting seg fault of Piece object in square, pushing for access via laptop
+
+commit eeb01b3d3242ba0ae1994b5b9cf56d21aa58315c
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 12:21:46 2015 -0600
+
+    Started on commands
+
+commit 40822d8161fa17abff0743cf8253986d8e27e0a9
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 11:12:09 2015 -0600
+
+    Added Pawn and other changes for testing
+
+commit 827083516e5e2642961b30a31fd47663103dd461
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 10:54:36 2015 -0600
+
+    Create README.md
+
+commit 4d07dfce45192bbf4bece19987b0fdbb382545a1
+Author: jjordantb <jordan.florchinger@uleth.ca>
+Date:   Wed Sep 30 10:01:45 2015 -0600
+
+    Initial commit

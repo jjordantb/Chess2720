@@ -5,6 +5,7 @@
 #include <bits/ios_base.h>
 #include <ostream>
 #include <iostream>
+#include <assert.h>
 #include "Board.h"
 
 /*
@@ -14,14 +15,18 @@
  *      Author: anvik
  */
 
-#include <iostream>
-#include <assert.h>
 
-Board::Board(const int w, const int h) :
-        height { h }, width { w } {
+Board::Board(const int w, const int h) : height { h }, width { w } {
     board = new Square*[height];
     for (int row = 0; row < height; row++)
         board[row] = new Square[width];
+
+    for (int i = 0; i < w; ++i) {
+        for (int j = 0; j < h; ++j) {
+            (&board[i][j])->setX(i);
+            (&board[i][j])->setY(j);
+        }
+    }
 }
 
 Board::~Board() {

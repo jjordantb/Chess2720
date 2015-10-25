@@ -9,7 +9,7 @@
 #define CHESS_H_
 
 #include "../wrappers/Square.h"
-#include "../generic/Game.h"
+#include "../../Game.h"
 
 
 /**

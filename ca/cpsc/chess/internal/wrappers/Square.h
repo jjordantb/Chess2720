@@ -37,8 +37,14 @@ public:
      */
     Piece* getPiece() const;
 
+    int getX();
+    int getY();
+    void setX(int x);
+    void setY(int y);
+
 private:
     Piece* piece; /*< Piece contained by the square */
+    int x, y;
 };
 
 #endif /* SQUARE_H_ */

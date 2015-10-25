@@ -8,7 +8,7 @@
 #include "Square.h"
 #include <stdlib.h>
 
-Square::Square(){
+Square::Square() {
     piece = NULL;
 }
 
@@ -38,3 +38,20 @@ const char Square::symbol() const {
 Piece* Square::getPiece() const {
     return piece;
 }
+
+int Square::getX() {
+    return x;
+}
+
+int Square::getY() {
+    return y;
+}
+
+void Square::setX(int x) {
+    Square::x = x;
+}
+
+void Square::setY(int y) {
+    Square::y = y;
+}
+
