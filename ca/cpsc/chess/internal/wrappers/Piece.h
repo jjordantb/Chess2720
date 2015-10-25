@@ -3,6 +3,7 @@
  *
  *  Created on: Sep 3, 2015
  *      Author: anvik
+ *      Modified by: Jordan Florchinger
  */
 
 #ifndef PIECE_H_

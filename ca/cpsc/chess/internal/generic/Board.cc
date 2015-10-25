@@ -1,7 +1,3 @@
-//
-// Created by jorda on 9/29/2015.
-//
-
 #include <bits/ios_base.h>
 #include <ostream>
 #include <iostream>
@@ -9,10 +5,11 @@
 #include "../impl/error/Error.h"
 
 /*
- * Board.cpp
+ * Board.cc
  *
  *  Created on: Sep 2, 2015
  *      Author: anvik
+ *      Modified: Jordan Florchinger
  */
 
 

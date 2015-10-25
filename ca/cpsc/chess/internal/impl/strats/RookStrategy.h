@@ -8,6 +8,9 @@
 
 #include "../../generic/Movement.h"
 
+/*
+ * Movement algorithm for rook
+ */
 class RookStrategy : public Movement {
 
 public:

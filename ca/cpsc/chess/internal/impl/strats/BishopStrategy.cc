@@ -1,5 +1,5 @@
 //
-// Created by jorda on 10/25/2015.
+// Created by Jordan Florchinger on 10/25/2015.
 //
 
 #include "BishopStrategy.h"

@@ -1,5 +1,5 @@
 //
-// Created by jorda on 10/24/2015.
+// Created by Jordan Florchinger on 10/24/2015.
 //
 
 #ifndef CHESS2720_MOVEMENT_H

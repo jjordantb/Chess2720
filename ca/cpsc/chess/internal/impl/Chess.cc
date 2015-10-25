@@ -1,8 +1,9 @@
 /*
- * Chess.cpp
+ * Chess.cc
  *
  *  Created on: Sep 4, 2015
  *      Author: anvik
+ *      Modified by: Jordan Florchinger
  */
 
 #include <iostream>
@@ -10,11 +11,13 @@
 #include "../generic/Board.h"
 #include "Chess.h"
 #include "error/Error.h"
+#include "state/impl/PlayerOneState.h"
 
 #define SIZE 6
 
 Chess::Chess() {
     board = new Board(SIZE, SIZE);
+    state = new PlayerOneState();
 
     // Create King pieces
     bKing = new Piece(Piece::black, 'K');
@@ -110,5 +113,13 @@ Square* Chess::getSquare(std::istream &is) const {
         throw invalid_format_error("Invalid Format!");
     }
     return NULL;
+}
+
+const State* Chess::getState() {
+    return state;
+}
+
+const void Chess::setState(State *state) {
+    Chess::state = state;
 }
 

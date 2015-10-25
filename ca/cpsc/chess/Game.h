@@ -3,6 +3,7 @@
  *
  *  Created on: Sep 2, 2015
  *      Author: anvik
+ *      Modified by: Jordan Florchinger
  */
 
 #ifndef GAME_H_
@@ -10,6 +11,7 @@
 
 #include <iostream>
 #include "internal/generic/Board.h"
+#include "internal/impl/state/generic/State.h"
 
 /**
  * A board game
@@ -41,11 +43,22 @@ public:
      */
     virtual Square* getSquare(std::istream &is) const = 0;
 
+    /*
+     * Getter and setters for state
+     */
+    virtual const State* getState() = 0;
+    virtual const void setState(State* state) = 0;
+
 protected:
     /**
      * The game board
      */
     const Board* board;
+
+    /*
+     *  Player State 1 or 2
+     */
+    State* state;
 };
 
 #endif /* GAME_H_ */

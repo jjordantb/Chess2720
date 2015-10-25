@@ -1,5 +1,5 @@
 //
-// Created by jorda on 10/25/2015.
+// Created by Jordan Florchinger on 10/25/2015.
 //
 
 #ifndef CHESS2720_BISHOPSTRATEGY_H
@@ -8,6 +8,9 @@
 
 #include "../../generic/Movement.h"
 
+/*
+ * Movement algorithm for bishop
+ */
 class BishopStrategy : public Movement {
 
 public:

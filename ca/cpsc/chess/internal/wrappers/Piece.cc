@@ -1,8 +1,10 @@
 /*
- * Piece.cpp
+ * Piece.cc
  *
  *  Created on: Sep 4, 2015
  *      Author: anvik
+ *      Modified by: Jordan Florchinger
+
  */
 
 #include "Piece.h"

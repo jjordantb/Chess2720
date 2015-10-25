@@ -3,6 +3,7 @@
  *
  *  Created on: Sep 4, 2015
  *      Author: anvik
+ *      Modified by: Jordan Florchinger
  */
 
 #ifndef CHESS_H_
@@ -32,6 +33,12 @@ public:
      * The row and column values are separated by a space on one line.
      */
     Square* getSquare(std::istream &is) const;
+
+    /*
+     * Getter and setters for state
+     */
+    const State* getState();
+    const void setState(State* state);
 
 private:
     Piece* wKing; /*!< the White King */

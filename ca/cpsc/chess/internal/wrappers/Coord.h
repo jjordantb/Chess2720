@@ -5,7 +5,9 @@
 #ifndef CHESS2720_COORD_H
 #define CHESS2720_COORD_H
 
-
+/*
+ * Coordinate wrapper for path generation
+ */
 class Coord {
 
 private:

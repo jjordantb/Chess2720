@@ -1,5 +1,5 @@
 //
-// Created by jorda on 10/25/2015.
+// Created by Jordan Florchinger on 10/25/2015.
 //
 
 #include <iostream>
@@ -7,6 +7,7 @@
 
 /*
  * Validates horizontal, vertical, or diagonal line.
+ * Movement algorithm for queen
  */
 std::vector<Coord*> QueenStrategy::path(Coord *start, Coord *end) {
     std::vector<Coord*> cords;

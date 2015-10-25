@@ -3,6 +3,7 @@
  *
  *  Created on: Sep 2, 2015
  *      Author: anvik
+ *      Modified by: Jordan Florchinger
  */
 
 #ifndef SQUARE_H_
@@ -44,7 +45,7 @@ public:
 
 private:
     Piece* piece; /*< Piece contained by the square */
-    int x, y;
+    int x, y; /*< x and y coords of square for ease of use*/
 };
 
 #endif /* SQUARE_H_ */
