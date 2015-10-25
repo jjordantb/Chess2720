@@ -32,7 +32,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/Piece.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Square.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/Square.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/main.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cc" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
