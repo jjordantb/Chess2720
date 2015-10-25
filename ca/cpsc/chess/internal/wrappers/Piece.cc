@@ -11,6 +11,7 @@
 #include "../impl/strats/BishopStrategy.h"
 #include "../impl/strats/RookStrategy.h"
 #include "../impl/strats/PawnStrategy.h"
+#include "../impl/error/Error.h"
 #include <cctype>
 
 Piece::Piece(const colour c, const char s) : symbol{s}, player {c}{

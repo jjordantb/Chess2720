@@ -5,8 +5,8 @@
 #include <bits/ios_base.h>
 #include <ostream>
 #include <iostream>
-#include <assert.h>
 #include "Board.h"
+#include "../impl/error/Error.h"
 
 /*
  * Board.cpp
@@ -63,12 +63,17 @@ void Board::placePiece(Piece* p, Square* s) const {
 
 bool Board::movePiece(Square* s, Square* d) const {
     Piece* p = s->removePiece();
-    assert(p != NULL);
+    if (p == NULL) {
+        throw invalid_piece_error("Invalid Piece");
+    }
     d->setPiece(p);
     return true;
 }
 
 Square* Board::getSquare(int r, int c) const {
+    if (r > width || r < 0 || c > height || c < 0) {
+        throw invalid_coordinates_error("Incorect Co-ordinates");
+    }
     return &board[r][c];
 }
 

@@ -3,14 +3,24 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/Game.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/Game.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Board.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Board.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Game.cc" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Game.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Movement.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/generic/Movement.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/Chess.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/Chess.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/error/Error.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/BishopStrategy.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/BishopStrategy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/KingStrategy.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/KingStrategy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/PawnStrategy.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/PawnStrategy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/QueenStrategy.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/QueenStrategy.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/RookStrategy.cc" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/impl/strats/RookStrategy.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/wrappers/Coord.cc" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/wrappers/Coord.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ca/cpsc/chess/internal/wrappers/Piece.cc" isTestSource="false" />

@@ -6,6 +6,7 @@
  */
 
 #include "Square.h"
+#include "../impl/error/Error.h"
 #include <stdlib.h>
 
 Square::Square() {
@@ -23,6 +24,9 @@ void Square::setPiece(Piece* p) {
 }
 
 Piece* Square::removePiece() {
+    if (piece == NULL) {
+        throw invalid_piece_error("Piece does not exists!");
+    }
     Piece* p = piece;
     piece = NULL;
     return p;

@@ -6,9 +6,10 @@
  */
 
 #include <iostream>
-#include <assert.h>
+#include <limits>
 #include "../generic/Board.h"
 #include "Chess.h"
+#include "error/Error.h"
 
 #define SIZE 6
 
@@ -96,15 +97,18 @@ bool Chess::isOver() const {
 
 Square* Chess::getSquare(std::istream &is) const {
     int row, col;
-    is >> row >> col;
-    while (is.peek() != '\n') {
-        // eats until the end of line
-        is.ignore(1);
+    if (is >> row >> col) {
+        while (is.peek() != '\n') {
+            // eats until the end of line
+            is.ignore(1);
+        }
+        is.ignore();
+        return board->getSquare(row, col);
+    } else {
+        is.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        throw invalid_format_error("Invalid Format!");
     }
-    is.ignore();
-    assert(0 <= row && row < SIZE);
-    assert(0 <= col && col < SIZE);
-
-    return board->getSquare(row, col);
+    return NULL;
 }
 
